@@ -1,0 +1,140 @@
+body {
+    background-color: #606C5A;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50px;
+    object-fit: cover;
+    border: 3px solid rgb(233, 233, 241);
+    display: block;
+    margin: 20px auto;
+    box-shadow: 0 15px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    max-width: 1000px;
+    max-height: 1110px;
+    margin: auto;
+    background-color: #C9E3CC;
+    padding: 45px;
+    border-radius: 5%;
+    box-shadow: 0 0 25px;
+    color: #333;
+}
+
+.contact {
+    margin-left: 10px;
+    margin-top: -250px;
+    line-height: 1;
+}
+
+.follow {
+    margin-left: 780px;
+    margin-top: -150px;
+}
+
+.langue {
+    margin-left: 10px;
+    margin-top: 50px;
+    line-height: 1;
+}
+
+.propos {
+    background-color: #B8CBD0;
+    text-align: center;
+    box-shadow: 0 0 15px;
+    border-radius: 15px;
+}
+
+.experience {
+    background-color: #B8CBD0;
+    margin-top: -30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0 15px;
+}
+
+.project {
+    background-color: #B8CBD0;
+    box-shadow: 0 0 15px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.copy {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.etudes {
+    margin: auto;
+    text-align: justify;
+    border-radius: 15px;
+}
+
+.partie-gauche,
+.partie-droite {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.partie-droite {
+    background-color: white;
+    width: 50%;
+    float: left;
+}
+
+.partie-gauche {
+    background-color: rgb(6, 75, 37);
+    color: rgb(247, 242, 242);
+    width: 50%;
+    float: right;
+}
+
+h2,
+{}
+
+.pgf {
+    text-align: center;
+}
+
+h3,
+h4 {
+    color: white;
+}
+
+h3 {
+    color: rgb(15, 7, 127);
+    text-decoration: underline;
+}
+
+a {
+    color: lightblue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+.partie-droite h3 {
+    color: rgb(15, 7, 127);
+}
+
+.partie-droite p,
+.partie-droite li {
+    color: #333;
+}
+
+a {
+    color: rgb(255, 81, 0);
+}
