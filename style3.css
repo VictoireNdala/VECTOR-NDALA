@@ -1,0 +1,37 @@
+/*CSS pour la page smartphone*/
+
+.titre {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.phones-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 12rem));
+    gap: 2rem;
+}
+.produit_phone {
+    background: white;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.produit_phone img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.produit_phone .smartphone{
+    display: block;
+    margin: 1rem;
+    text-align: center;
+}
+/*pris du site medium.com*/
+
+@media all and (max-width:500px){
+}

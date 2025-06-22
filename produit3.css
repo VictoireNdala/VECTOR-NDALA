@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Figtree", sans-serif;
+}
+
+ nav {
+    position: fixed;
+    background-color: #131825;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 12;
+ }
+
+ nav .menu {
+    font-family: giga sans;
+    max-width: 1250px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: -10px 20px;
+ }
+
+ nav .menu .logo a {
+    position: relative;
+    top: 3px;
+    right: 100px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    font-family: giga sans extrabold;
+ }
+
+ .menu ul {
+    display: inline;
+    list-style: none;
+ }
+ 
+ .menu ul li:first-child {
+    position: absolute;
+    top: 20px;
+    right: 130px;
+ }
+
+ .menu ul li:last-child {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+ }
+
+ .menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: all 0.4 ease;
+ }
+ .menu ul li a:hover {
+    background-color: #f5f5f5;
+    color: #131825;
+    font-weight: bold;
+ }
+
+body {
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    background: radial-gradient(circle at 50% 50%, #192233 20%, #000);
+    overflow-x: hidden;
+}
+
+.text {
+    color:#ffffff;
+    position: absolute;
+    text-align: left;
+    margin: 1% auto -1%;
+    padding-left: 25px;
+}
+
+.titlen2 {
+    position: absolute;
+    color: #ffffffd8;
+    padding-left: 25px;
+    margin: 42% auto -42%;
+}
+
+.buton02 .btn {
+    display: block;
+    width: 120px;
+    border-radius: 30px;
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+    top: 90px;
+    left: 40%;
+    font-family: giga sans;
+    background-color: #e2e2e2;
+    color: #192233;
+}
+
+.buton02 .btn:hover {
+    background-color: #fff0c0;
+    color: #192233;
+    font-family: giga sans extrabold;
+    transition: 500ms;
+}
+
+.buton002 .btn {
+    display: block;
+    width: 120px;
+    border-radius: 30px;
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+    top: 69px;
+    left: 51%;
+    font-family: giga sans;
+    background-color: #e2e2e2;
+    color: #192233;
+
+}
+
+.buton002 .btn:hover {
+    background-color: #fff0c0;
+    color: #192233;
+    font-family: giga sans extrabold;
+    transition: 1s;
+}
+
+.image1 {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0;
+    width: 90vw;
+    max-width: 1200px;
+    height: 450px;
+    transition: all 1s;
+}
+
+.image1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid white;
+    transition: all 2s ease;
+}
+
+.img {
+    position: relative;
+    transition: all 2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.image1:hover .img:not(:hover) {
+    filter: grayscale(100%) opacity(24%);
+}
+
+.img:hover {
+    filter: grayscale(0%) opacity(100%) !important;
+    transform: scale(1.05);
+    z-index: 10;
+}
+
+
+/* Effets d'agrandissement au survol */
+
+.image1:has(.img-1:hover) {
+    grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
+}
+
+.image1:has(.img-2:hover) {
+    grid-template-columns: 1fr 3fr 1fr 1fr 1fr;
+}
+
+.image1:has(.img-3:hover) {
+    grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
+}
+
+.image1:has(.img-4:hover) {
+    grid-template-columns: 1fr 1fr 1fr 3fr 1fr;
+}
+
+.image1:has(.img-5:hover) {
+    grid-template-columns: 1fr 1fr 1fr 1fr 3fr;
+}
+
+/* Animation des titres */
+
+.img::after {
+    content: attr(data-text);
+    position: absolute;
+    bottom: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    transform: translateY(60px);
+    opacity: 0;
+    transition: all 1s;
+    border-radius: 5px;
+}
+
+.img:hover::after {
+    transform: translateY(0);
+    opacity: 1;
+    transition-delay: 200ms;
+}
+
+
+/* Effet de décalage alterné */
+
+.img:nth-child(odd) {
+    transform: translateY(-16px);
+}
+
+.img:nth-child(even) {
+    transform: translateY(16px);
+}

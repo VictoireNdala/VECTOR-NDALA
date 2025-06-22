@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Figtree", sans-serif;
+}
+
+nav {
+    position: fixed;
+    background-color: #131825;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 12;
+}
+
+nav .menu {
+    font-family: giga sans;
+    max-width: 1250px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: -10px 20px;
+}
+
+nav .menu .logo a {
+    position: relative;
+    top: 3px;
+    right: 100px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    font-family: giga sans extrabold;
+}
+
+.menu ul {
+    display: inline;
+    list-style: none;
+}
+
+.menu ul li:first-child {
+    position: absolute;
+    top: 20px;
+    right: 130px;
+}
+
+.menu ul li:last-child {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: all 0.4s ease;
+}
+
+.menu ul li a:hover {
+    background-color: #f5f5f5;
+    color: #131825;
+    font-weight: bolder;
+}
+
+body {
+    background: radial-gradient(circle at 50% 50%, #192233 20%, #000);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.container {
+    display: flex;
+    padding: 2rem;
+    gap: 3rem;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.phone-image {
+    flex: 1;
+    position: sticky;
+    top: 2rem;
+}
+
+.phone-image img {
+    width: 200px;
+    max-width: 100px;
+    border-radius: 15px;
+    border: 2px solid white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.phone-description {
+    flex: 1;
+    padding: 1rem;
+}
+
+.phone-description h3 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #fff;
+}
+
+.phone-description p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.phone-description b {
+    color: #4fc3f7;
+}
+
+.phone-description i {
+    color: #a5d6a7;
+}
+
+.resume {
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-top: 1.5rem;
+}
+
+.username {
+    color: #b0bec5;
+    font-size: 0.9rem;
+    font-style: italic;
+    margin: 0.5rem 0;
+}
+
+.comment {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.buttons a {
+    color: white;
+    background: #1976d2;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.buttons a:hover {
+    background: #1565c0;
+    transform: translateY(-2px);
+}
