@@ -1,70 +1,70 @@
- 
  * {
      margin: 0;
      padding: 0;
      box-sizing: border-box;
      font-family: giga sans;
  }
-
+ 
  nav {
-        position: fixed;
-    background-color: #131825;
-    width: 100%;
-    padding: 10px 0;
-    z-index: 12;
+     position: fixed;
+     background-color: #131825;
+     width: 100%;
+     padding: 10px 0;
+     z-index: 12;
  }
-
+ 
  nav .menu {
-    max-width: 1250px;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: -10px 20px;
+     max-width: 1250px;
+     margin: auto;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: -10px 20px;
  }
-
+ 
  nav .menu .logo a {
-    position: relative;
-    top: 3px;
-    right: 100px;
-    text-decoration: none;
-    color: #fff;
-    font-size: 25px;
-    font-family: giga sans extrabold;
+     position: relative;
+     top: 3px;
+     right: 100px;
+     text-decoration: none;
+     color: #fff;
+     font-size: 25px;
+     font-family: giga sans extrabold;
  }
-
+ 
  .menu ul {
-    display: inline;
-    list-style: none;
+     display: inline;
+     list-style: none;
  }
  
  .menu ul li:first-child {
-    position: absolute;
-    top: 20px;
-    right: 130px;
+     position: absolute;
+     top: 20px;
+     right: 130px;
  }
-
+ 
  .menu ul li:last-child {
-    position: absolute;
-    top: 20px;
-    right: 20px;
+     position: absolute;
+     top: 20px;
+     right: 20px;
  }
-
+ 
  .menu ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 10px;
-    font-weight: 500;
-    padding: 8px 15px;
-    border-radius: 5px;
-    transition: all 0.4 ease;
+     text-decoration: none;
+     color: #fff;
+     font-size: 10px;
+     font-weight: 500;
+     padding: 8px 15px;
+     border-radius: 5px;
+     transition: all 0.4 ease;
  }
+ 
  .menu ul li a:hover {
-    background-color: #f5f5f5;
-    color: #131825;
-    font-weight: bold;
+     background-color: #f5f5f5;
+     color: #131825;
+     font-weight: bold;
  }
-
+ 
  body {
      background-color: #f5f5f5;
      color: #333;
@@ -72,37 +72,35 @@
  }
  /* Style du conteneur principal */
  
- /* Remplacez la partie .titre existante par ceci : */
-.titre {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: linear-gradient(-45deg, #131825, #6bbfc3, #131825);
-    background-size: 400% 400%;
-    animation: gradientBG 10s ease infinite;
-    font-family: 'Arial', sans-serif;
-}
-
-/* Ajoutez cette nouvelle animation */
-@keyframes gradientBG {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
-/* Ajustez la couleur du texte pour qu'il soit visible */
-.oxizen-text span {
-    color: #fff;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
-}
-
+ .titre {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     background: linear-gradient(-45deg, #131825, #6bbfc3, #131825);
+     background-size: 400% 400%;
+     animation: gradientBG 10s ease infinite;
+     font-family: 'Arial', sans-serif;
+ }
+ /* Ajoutez cette nouvelle animation */
+ 
+ @keyframes gradientBG {
+     0% {
+         background-position: 0% 50%;
+     }
+     50% {
+         background-position: 100% 50%;
+     }
+     100% {
+         background-position: 0% 50%;
+     }
+ }
+ /* Ajustez la couleur du texte pour qu'il soit visible */
+ 
+ .oxizen-text span {
+     color: #fff;
+     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+ }
  /* Style du texte "LOADING" */
  
  .oxizen-text {
@@ -113,7 +111,7 @@
  /* Animation pour chaque lettre */
  
  .oxizen-text span {
-    font-family: rugen;
+     font-family: rugen;
      font-size: 3rem;
      font-weight: bold;
      color: #222626;
@@ -157,7 +155,6 @@
  .oxizen-text span:nth-child(7) {
      animation-delay: 0.7s;
  }
-
  /* Définition de l'animation */
  
  @keyframes bounce {
@@ -215,25 +212,23 @@
      font-weight: bold;
      margin-bottom: 2rem;
  }
-
+ 
  .des {
-    position: relative;
-    text-align: center;
-    color: #f5f5f5;
-    margin: -215px auto 215px;
-    font-family: giga sans light;
+     position: relative;
+     text-align: center;
+     color: #f5f5f5;
+     margin: -215px auto 215px;
+     font-family: giga sans light;
  }
-
-
  /* Bouton */
  
  .btn {
-    font-family: giga sans extrabold;
+     font-family: giga sans extrabold;
      display: block;
      width: 200px;
      margin: -120px auto 120px;
      padding: 15px 20px;
-     background-color:#106085;
+     background-color: #106085;
      color: white;
      text-align: center;
      text-decoration: none;
